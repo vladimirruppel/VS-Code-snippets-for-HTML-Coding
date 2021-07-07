@@ -1,0 +1,236 @@
+{
+	"display grid": {
+		"prefix": "dg",
+		"body": [
+			"display: grid",
+			"grid-template-columns: $1",
+			"gap: $2px"
+		]
+	},
+	"display flex center": {
+		"prefix": "dfc",
+		"body": [
+			"display: flex",
+			"justify-content: center",
+			"align-items: center"
+		]
+	},
+	"flex direction column": {
+		"prefix": "fdc",
+		"body": "flex-direction: column"
+	},
+	"list style type none": {
+		"prefix": "lstpn",
+		"body": "list-style-type: none"
+	},
+	"transition": {
+		"body": "transition: all .3s ease 0s",
+		"prefix": "trn"
+	},
+	"add font (in _config.sass)": {
+		"prefix": "addf",
+		"body": "@include font('$1', normal, $2, '../fonts/$3.woff2')"
+	},
+	"margin bottom": {
+		"prefix": "mb",
+		"body": "margin: 0px 0px $1px 0px"
+	},	
+	"margin top": {
+		"prefix": "mt",
+		"body": "margin: $1px 0px 0px 0px"
+	},
+	"margin left": {
+		"prefix": "ml",
+		"body": "margin: 0px 0px 0px $1px"
+	},
+	"margin right": {
+		"prefix": "mr",
+		"body": "margin: 0px $1px 0px 0px"
+	},
+	"adaptive font": {
+		"prefix": "af",
+		"body": "@include adaptiveFont($1, $2)",
+		"description": "pc size and mobile size"
+	},
+	"mw": {
+		"prefix": "mw",
+		"body": [
+			"max-width: $1"
+		]
+	},
+	"av": {
+		"prefix": "av",
+		"body": [
+			"@include adaptiv-value(\"$1\", $2, $3, $4)"
+		],
+		"description": "adaptiv-value"
+	},
+	"margin vertical": {
+		"prefix": "mv",
+		"body": "margin: $1px 0px"
+	},
+	"margin horizontal": {
+		"prefix": "mh",
+		"body": "margin: 0px $1px"
+	},
+	"padding bottom": {
+		"prefix": "pb",
+		"body": "padding: 0px 0px $1px 0px"
+	},
+	"padding top": {
+		"prefix": "pt",
+		"body": "padding: $1px 0px 0px 0px"
+	},
+	"padding left": {
+		"prefix": "pl",
+		"body": "padding: 0px 0px 0px $1px"
+	},
+	"padding right": {
+		"prefix": "pr",
+		"body": "padding: 0px $1px 0px 0px"
+	},
+	"padding vertical": {
+		"prefix": "pv",
+		"body": "padding: $1px 0px"
+	},
+	"padding horizontal": {
+		"prefix": "ph",
+		"body": "padding: 0px $1px"
+	},
+	"margin auto 0": {
+		"prefix": "ma0",
+		"body": "margin: auto 0"
+	},
+	"margin 0 auto": {
+		"prefix": "m0a",
+		"body": "margin: 0 auto"
+	},
+	"margin auto": {
+		"prefix": "ma",
+		"body": "margin: auto"
+	},
+	"direction rtl": {
+		"prefix": "drt",
+		"body": [
+			"direction: rtl"
+		],
+		"description": "drt"
+	},
+	"border-radius: 50%": {
+		"prefix": "br5",
+		"body": [
+			"border-radius: 50%"
+		],
+		"description": "br5"
+	},
+	"box-shadow": {
+		"prefix": "bs",
+		"body": [
+			"box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);"
+		],
+		"description": "bs"
+	},
+	"color: ": {
+		"prefix": "c0",
+		"body": [
+			"color:#000;"
+		],
+		"description": "c0"
+	},
+	"width auto": {
+		"prefix": "wa",
+		"body": [
+			"width: auto;"
+		],
+		"description": "wa"
+	},
+	"height auto": {
+		"prefix": "ha",
+		"body": [
+			"height: auto;"
+		],
+		"description": "ha"
+	},
+	"color": {
+		"prefix": "c",
+		"body": [
+			"color: #${1:fff};"
+		],
+		"description": "color"
+	},
+	"animation": {
+		"prefix": "an",
+		"body": [
+			"animation:${1:name} 1s infinite linear;"
+		]
+	},
+	"last child": {
+		"prefix": "lc",
+		"body": [
+			"&:last-child\n\t$0"
+		],
+	},
+	"first child": {
+		"prefix": "fc",
+		"body": [
+			"&:first-child\n\t$0"
+		],
+	},
+	"before after": {
+		"prefix": "ba",
+		"body": [
+			"&::before,&::after\n\tcontent:''\n\t$0"
+		],
+		"description": "ba"
+	},
+	"after": {
+		"prefix": ["a", "af", "aft"],
+		"body": [
+			"&::after\n\tcontent:''\n\t$0"
+		],
+		"description": "after"
+	},
+	"before": {
+		"prefix": ["b", "bf"],
+		"body": [
+			"&::before\n\tcontent:''\n\t$0"
+		],
+		"description": "before"
+	},
+	"hover": {
+		"prefix": ["hv", "hvr"],
+		"body": [
+			"&:hover\n\t$0"
+		],
+		"description": "hv"
+	},
+	"background image": {
+		"prefix": ["bgi", "bg+"],
+		"body": [
+			"background: url('../images/dist/$0') 0 0 no-repeat;"
+		],
+		"description": "bg+"
+	},
+	"media query max width": {
+		"prefix": "md",
+		"body": "@media (max-width: \\$md$1)\n\t"
+	},
+	"flex wrap wrap": {
+		"prefix": "fww",
+		"body": "flex-wrap: wrap"
+	},
+	"keyframes": {
+		"prefix": "kf",
+		"body": "@keyframes ${1:name} \n\t0% \n\t\t$2\n\t100% \n\t\t$3\n",
+		"description": "kf"
+	},
+	"line height calculate": {
+		"prefix": "lhc",
+		"body": "line-height: $1 / $2 * 100%;"
+	},
+	"nowrap": {
+		"prefix": "wsnw",
+		"body": "white-space: nowrap;",
+		"description": "nowrap"
+	},
+}
