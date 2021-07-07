@@ -1,0 +1,67 @@
+{
+	"path for images": {
+		"prefix": "pth",
+		"body": "images/dist/$1"
+	},
+	"create image tag": {
+		"prefix": "img",
+		"body": "<img src=\"images/dist$1\" alt=\"$2\">"
+	},
+	"create section": {
+		"prefix": "sc",
+		"body": [
+			"<section class='$1'>",
+			"\t<div class='container'>",
+			"\t\t<div class='$1__wrap'>",
+			"\t\t\t$2",
+			"\t\t</div>",
+			"\t</div>",
+			"</section>"
+		]
+	},
+	"import part":{
+		"prefix": "im",
+		"body": "<!--#include virtual=\"/parts/$0.html\" -->"
+	},
+	"select calling": {
+		"prefix": "select",
+		"body": "<select name=\"form[]\" class=\"$1\">\n\t<option value=\"1\" selected=\"selected\">Пункт №1</option>\n\t<option value=\"2\">Пункт №2</option>\n\t<option value=\"3\">Пункт №3</option>\n\t<option value=\"4\">Пункт №4</option>\n</select>",
+	},
+	"quantity": {
+		"prefix": [
+			"qty",
+			"qunatity"
+		],
+		"body": "<div class=\"quantity\">\n\t<div class=\"quantity__button quantity__button_plus\"></div>\n\t<div class=\"quantity__input\">\n\t\t<input autocomplete=\"off\" type=\"text\" name=\"form[]\" value=\"1\">\n\t</div>\n\t<div class=\"quantity__button quantity__button_minus\"></div>\n</div>",
+	},
+	"container": {
+		"prefix": ["ct", "con", "cont"],
+		"body": "<div class=\"$1__container _container\">\n\t$2\n</div>"
+	},
+	"input type text": {
+		"prefix": "inp",
+		"body": "<input autocomplete=\"off\" type=\"text\" name=\"form[]\" data-error=\"Ошибка\" data-value=\"\" class=\"input $1\">",
+		"description": "input"
+	},
+	"input any": {
+		"prefix": "in",
+		"body": "<input type=\"text\" name=\"\" class=\"$1\">",
+		"description": "input"
+	},
+	"txta": {
+		"prefix": "txta",
+		"body": "<textarea autocomplete=\"off\" name=\"form[]\" data-value=\"$1\" data-error=\"Ошибка\" class=\"input\"></textarea>",
+	},
+	"select html": {
+		"prefix": "selecth",
+		"body": "<div class='select content-filter__select'>\n\t<div class='select-title'>\n\t\t<div class='select-title__arrow'></div>\n\t\t<div class='select-title__value'>Доллар США, USD</div>\n\t</div>\n\t<div class='select-options'>\n\t\t<div class='select-options-inside'>\n\t\t\t<div class='select-options__value'>Цена</div>\n\t\t\t<div class='select-options__value'>Название</div>\n\t\t</div>\n\t\t<input type='hidden' name='form[]'>\n\t</div>\n</div>",
+	},
+	"checkbox": {
+		"prefix": ["chk", "checkbox"],
+		"body": "<label class=\"checkbox\">\n\t<input data-error=\"Ошибка\" class=\"checkbox__input\" type=\"checkbox\" value=\"1\" name=\"form[]\">\n\t<span class=\"checkbox__text\"><span>${1:Я даю свое согласие на обработку персональных данных в соответствии с <a href=\"\">Условиями</a>}</span></span>\n</label>",
+	},
+	"images dist icons": {
+		"prefix": "imgi",
+		"body": "<img src=\"images/dist/icons$1\""
+	}
+}
