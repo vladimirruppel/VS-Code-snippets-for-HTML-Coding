@@ -1,0 +1,38 @@
+{
+	"document.querySelector": {
+		"prefix": "dq",
+		"body": [
+			"const ${1:var} = document.querySelector('.$2');"
+		],
+		"description": "document.querySelector"
+	},
+	"document.querySelectorAll": {
+		"prefix": "dqa",
+		"body": [
+			"const ${1:var} =document.querySelectorAll('.$2');"
+		],
+		"description": "document.querySelectorAll"
+	},
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');"
+		],
+		"description": "Log output to console"
+	},
+	"js_click": {
+		"prefix": "click",
+		"body": "${1:item}.addEventListener(\"click\", function(e) {\n\t$2\n});",
+		"description": "js_click"
+	},
+	"jq$": {
+		"prefix": "$",
+		"body": "$('$0')",
+		"description": "jquery select item"
+	},
+	"jq_this": {
+		"prefix": "this",
+		"body": "$(this)",
+		"description": "this element - jQuery"
+	}
+}
