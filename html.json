@@ -1,4 +1,14 @@
 {
+	"opt2": {
+		"prefix": "opt2",
+		"body": "<div class='options'>\n\t<input value='1' type='hidden' name='form[]' />\n\t<div data-value='1' class='option active'>Text #1</div>\n\t<div data-value='2' class='option'>Text #2</div>\n</div>",
+		"description": "opt2"
+	},
+	"opt": {
+		"prefix": "opt",
+		"body": "<div class=\"options\">\n\t<label class=\"options__item\">\n\t\t<input class=\"options__input\" checked type=\"radio\" value=\"1\" name=\"form[option]\">\n\t\t<span class=\"options__text\"><span>Text #1</span></span>\n\t</label>\n\t<label class=\"options__item\">\n\t\t<input class=\"options__input\" type=\"radio\" value=\"2\" name=\"form[option]\">\n\t\t<span class=\"options__text\"><span>Text #2</span></span>\n\t</label>\n</div>",
+		"description": "opt"
+	},
 	"path for images": {
 		"prefix": "pth",
 		"body": "images/dist/$1"
@@ -62,6 +72,6 @@
 	},
 	"images dist icons": {
 		"prefix": "imgi",
-		"body": "<img src=\"images/dist/icons$1\""
+		"body": "<img src=\"images/dist/icons$1\" alt=\"$2\">"
 	}
 }
